@@ -1,0 +1,22 @@
+.catalog-section {
+    padding-top: 112px;
+    background-color: $dark-blue-color;
+    &--page {
+        padding-top: 0;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 32px;
+        @media (max-width: 1350px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &--page {
+            margin-bottom: 0;
+            padding-bottom: 100px;
+            @media(max-width:650px) {
+                padding-bottom: 50px;
+            }
+        }
+    }
+}

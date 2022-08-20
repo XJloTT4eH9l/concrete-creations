@@ -1,0 +1,106 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    background-color: rgba($black-color , 0.85);
+
+    &__dialog {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 100px;
+        @media(max-width:700px) {
+            max-width: 500px;
+        }
+        @media(max-width:600px) {
+            max-width: 400px;
+        }
+        @media(max-width:470px) {
+            margin: 0;
+        }
+    }
+    &__content {
+        position: relative;
+        text-align: center;
+        background-color: $dark-blue-color;
+        border: 1px solid $grey-color;
+        @media(max-width:470px) {
+            width: 100vw;
+            height: 100vh;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 100px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: $white-color;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        @media(max-width:700px) {
+            font-size: 18px;
+        }
+        @media(max-width:600px) {
+            font-size: 16px;
+        }
+        @media(max-width:470px) {
+            font-size: 18px;
+        }
+    }
+    &__img {
+        width: 350px;
+        height: 160px;
+        margin-bottom: 40px;
+        @media(max-width:600px) {
+            width: 250px;
+            height: auto;
+        }
+    }
+    &__text {
+        margin: 0 auto;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        @media(max-width:700px) {
+            max-width: 400px;
+        }
+        @media(max-width:600px) {
+            font-size: 10px;
+        }
+        @media(max-width:470px) {
+            
+        }
+    }
+    &__closebtn {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        z-index: 1001;
+        @media(max-width:600px) {
+            right: -25px;
+        }
+        @media(max-width:470px) {
+            right: 25px;
+            top: 25px;
+        }
+    }
+    &__close {
+        width: 24px;
+        height: 24px;
+        stroke: #3B4C64;
+        @media(max-width:600px) {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

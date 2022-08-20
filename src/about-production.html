@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/svg.html')
+  @include('partials/contacts.html')
+  @include('partials/header.html')
+  <main class="main">
+    <section class="bread-crumbs">
+      <div class="container">
+          <div class="bread-crumbs__inner">
+              <a href="index.html" class="bread-crumbs__item">Главная</a>
+              <span class="bread-crumbs__separator"></span>
+              <a class="bread-crumbs__item">О производстве</a>
+          </div>
+      </div>
+  </section> 
+  @include('partials/about-production-section.html')
+  @include('partials/stock.html')
+  @include('partials/production.html')
+  @include('partials/about.html')
+  @include('partials/guarantees.html')
+  @include('partials/delivery.html')
+  @include('partials/contact.html')
+  </main>
+
+  @include('partials/footer.html')
+</body>
+
+</html>

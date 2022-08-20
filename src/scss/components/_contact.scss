@@ -1,0 +1,76 @@
+.contact {
+    padding: 50px 0;
+    background-color: #182841;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #9EA5AF;
+    &__title {
+        text-align: center;
+    }
+    &__form {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    &__name-email {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__input {
+        display: block;
+        width: 420px;
+        padding: 10px 15px;
+        margin-bottom: 24px;
+        font-size: 18px;
+        line-height: 1.2;
+        border: 1px solid transparent;
+        outline: none;
+        background-color: #2F3E54;
+        color: $white-color;
+        transition: border 0.2s ease-in-out;
+        @media(max-width: 900px) {
+            width: 100%;
+            font-size: 16px;
+        }
+        &--message {
+            width: 100%;
+            min-height: 120px;
+            resize: none;
+        }
+        &::placeholder {
+            color: #9EA5AF;
+        }
+        &:focus {
+            border: 1px solid $accent-color;
+        }
+    }
+    &__confirm {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__btn {
+        position: relative;
+        padding: 13px 24px;
+        padding-left: 60px;
+        font-size: 16px;
+        & img {
+            position: absolute;
+            left: 20px;
+            top: calc(50% - 12px);
+        }
+    }
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &--input {
+            margin-right: 12px;
+        }
+    }
+    &__link {
+        color: $accent-color;
+    }
+}

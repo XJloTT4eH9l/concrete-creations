@@ -1,0 +1,39 @@
+.contacts {
+    @media (max-width: 1100px) {
+        display: none;
+    }
+    padding: 10px 0;
+    background-color: $black-color;
+    position: relative;
+    z-index: 100;
+    &__left {
+        display: flex;
+        font-size: 14px;
+        color: $grey-color;
+    }
+    &__right {
+        display: flex;
+    }
+    &__item:not(:last-child) {
+        margin-right: 32px;
+    }
+    &__addres {
+        margin-right: 20px;
+    }
+    &__mail {
+        margin-right: 20px;
+        color: $grey-color;
+    }
+    &__main-tell {
+        color: $grey-color;
+    }
+    &__tell {
+        font-weight: 500;
+        color: $white-color;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: 300;
+        color: $white-color;
+    }
+}

@@ -1,0 +1,30 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// sections
+@import "./components/header";
+@import "./components/hero";
+@import "./components/catalog-section";
+@import './components/about';
+@import './components/advantages';
+@import "./components/news-section";
+@import "./components/contact";
+@import "./components/footer";
+@import "./components/about-production-section";
+@import "./components/stock";
+@import "./components/production";
+@import "./components/guarantees";
+@import "./components/delivery";
+
+// small components
+@import "./components/nav";
+@import "./components/svg";
+@import "./components/btns";
+@import "./components/product";
+@import "./components/productions";
+@import "./components/contacts";
+@import "./components/burger-menu";
+@import "./components/modal";
+@import "./components/bread-crumbs";

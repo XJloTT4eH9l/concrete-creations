@@ -1,0 +1,119 @@
+.stock {
+  background-color: $dark-blue-color;
+  padding-bottom: 100px;
+  @media(max-width: 700px) {
+    padding-bottom: 20px;
+  }
+  &__slider-container {
+    padding-top: 50px;
+    border: 1px solid $dark-grey-color;
+    @media(max-width: 700px) {
+      padding-top: 0;
+      border: none;
+    }
+  }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .swiper-stock-main {
+    height: 500px;
+    width: 900px;
+    margin-bottom: 50px;
+    @media(max-width: 1000px) {
+      width: 600px;
+      height: auto;
+    }
+    @media(max-width: 700px) {
+      width: 500px;
+    }
+    @media(max-width: 550px) {
+      width: 400px;
+    }
+    @media(max-width: 450px) {
+      width: 300px;
+    }
+    @media(max-width: 350px) {
+      width: 275px;
+    }
+  }
+
+  .swiper-stock-preview {
+    height: 130px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    @media(max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .swiper-stock-preview .swiper-slide {
+    width: 160px;
+    height: 110px;
+    opacity: 0.4;
+    padding: 5px;
+    border-right: 1px solid $dark-grey-color;
+    border-left: 1px solid $dark-grey-color;
+    border-bottom: 1px solid $dark-grey-color;
+    background-color: $dark-blue-color;
+  }
+
+  .swiper-stock-preview .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-stock-main .swiper-button-next::after,
+  .swiper-stock-main .swiper-button-prev::after {
+    font-size: 40px;
+    color: $accent-color;
+    @media(max-width: 550px) {
+      font-size: 30px;
+    }
+  }
