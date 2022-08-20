@@ -3,6 +3,9 @@
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: $dark-blue-color;
+    &--page {
+        padding-top: 0;
+    }
     @media (max-width: 610px) {
         padding: 50px 0;
     }
@@ -15,6 +18,9 @@
         padding: 32px;
         border: 1px solid $grey-color;
         margin-bottom: 32px;
+        &--page {
+            margin-bottom: 0;
+        }
         @media (max-width: 1250px) {
             width: 50%;
             margin-bottom: 24px;
@@ -52,5 +58,8 @@
         @media (max-width: 661px) {
             margin-bottom: 16px;
         }
+    }
+    &__btn {
+        margin-top: 30px;
     }
 }
