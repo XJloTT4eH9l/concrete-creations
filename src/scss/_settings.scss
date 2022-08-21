@@ -20,6 +20,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   color: $white-color;
+  background-color: $dark-blue-color;
 }
 button, button:visited, button:focus, button:active, button:hover {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -141,4 +142,7 @@ ul {
 }
 .hidden {
   display: none;
+}
+.padding-top {
+  padding-top: 200px;
 }
