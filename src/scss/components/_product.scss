@@ -1,6 +1,7 @@
 .product {
     border: 1px solid $grey-color;
     transition: background-color 0.3s ease-in-out;
+    max-height: 426px;
     &__title {
         font-size: 18px;
         font-weight: 400;
@@ -60,6 +61,12 @@
                 height: auto;
             }
         }
+    }
+    &__img {
+        z-index: -1;
+    }
+    &__num {
+        color: $accent-color;
     }
     &:hover {
         background-color: $accent-color;
