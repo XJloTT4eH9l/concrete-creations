@@ -50,6 +50,9 @@
     &__link {
         display: block;
         padding: 32px;
+        &:hover {
+            cursor: pointer;
+        }
         @media (max-width: 1350px) {
             text-align: center;
             padding: 12px;

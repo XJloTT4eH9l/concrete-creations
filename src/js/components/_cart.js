@@ -60,6 +60,9 @@ if(cartLocaiton[cartLocaiton.length - 1] === 'cart.html') {
         orderBtn.classList.add('btn-reset', 'btn', 'btn--md', 'btn__accent', 'cart__order-btn');
         orderBtn.textContent = 'Заказать';
         cartInner.append(orderBtn);
+        orderBtn.addEventListener('click', makeOrder);
+
+        showSummary();
     }
     window.addEventListener('click', (event) => {
         if(event.target.dataset.action === 'minus') {
@@ -72,6 +75,7 @@ if(cartLocaiton[cartLocaiton.length - 1] === 'cart.html') {
             if(counter.textContent > 1) {
                 counter.textContent = --counter.textContent;
                 cartSumm.textContent = +counter.textContent * parseInt(cartPrice.textContent.split(' ')[1]) + ' грн';
+                showSummary();
             }
         }
         if(event.target.dataset.action === 'plus') {
@@ -83,6 +87,7 @@ if(cartLocaiton[cartLocaiton.length - 1] === 'cart.html') {
 
             counter.textContent = ++counter.textContent;
             cartSumm.textContent = +counter.textContent * parseInt(cartPrice.textContent.split(' ')[1]) + ' грн';
+            showSummary();
         }
         if(event.target.dataset.action === 'delete') {
 
@@ -102,6 +107,33 @@ if(cartLocaiton[cartLocaiton.length - 1] === 'cart.html') {
 
             const cartItem = event.target.closest('.cart__item');
             cartItem.remove();
+            showSummary();
         }
-    })
+    });
+
+    function removeCartGoods() {
+        const cartItems = document.querySelectorAll('.cart__item');
+        cartItems.forEach(item => item.remove());
+    }
+
+    function showSummary() {
+        const prices = document.querySelectorAll('.cart__summ');
+        const fullPrice = document.querySelector('.cart__full-price');
+        let price = 0;
+
+        prices.forEach(item => {
+            price += parseInt(item.textContent);
+        });
+
+        fullPrice.innerHTML = `Итого: <span>${price} грн</span>`;
+    }
+    function makeOrder() {
+        if(cartGoods.length > 0) {
+            localStorage.clear();
+            removeCartGoods();
+            showSummary();
+            document.querySelector('.cart__order-btn').remove();
+            alert('Заказ принят');
+        }
+    }
 }
