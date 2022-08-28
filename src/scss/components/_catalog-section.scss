@@ -71,4 +71,9 @@
     &__link:hover {
         background-color: $accent-color;
     }
+    &__btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }

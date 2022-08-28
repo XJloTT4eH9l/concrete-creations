@@ -4,32 +4,32 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
     const goodsNums = document.querySelectorAll('.product__num');
     const catalogInner = document.querySelector('.catalog-section__inner--page');
     const catalogGoods = [
-        {id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '6 250 грн/шт', img: 'img/plate.png'},
-        {id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '3 400 грн/шт', img: 'img/plate.png'},
-        {id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 650 грн/шт', img: 'img/plate.png'},
-        {id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/tray.png'},
-        {id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/tray.png'},
-        {id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/tray.png'},
-        {id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 4, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 4, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
-        {id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5 200 грн/шт', img: 'img/plate.png'},
+        {num: 1, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 2, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '6250 грн/шт', img: 'img/plate.png'},
+        {num: 3, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '3400 грн/шт', img: 'img/plate.png'},
+        {num: 4, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5650 грн/шт', img: 'img/plate.png'},
+        {num: 5, id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/tray.png'},
+        {num: 6, id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/tray.png'},
+        {num: 7, id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/tray.png'},
+        {num: 8, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 9, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 10, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 11, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 12, id: 4, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 13, id: 4, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 14, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 15, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 16, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 17, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 18, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 19, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 20, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 21, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 22, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 23, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 24, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 25, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 26, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
     ];
     const catalog1 = catalogGoods.filter((item) => item.id === 1);
     const catalog2 = catalogGoods.filter((item) => item.id === 2);
@@ -65,13 +65,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                 catalog1.forEach(item => {
                     const element = document.createElement('div');
                     element.classList.add('product');
+                    element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="#" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
                         <p class="product__price">${item.price}</p>
-                        <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                        <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
                     catalogSectionMain.append(element);
@@ -81,13 +82,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                 catalog2.forEach(item => {
                     const element = document.createElement('div');
                     element.classList.add('product');
+                    element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="#" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
                         <p class="product__price">${item.price}</p>
-                        <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                        <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
                     catalogSectionMain.append(element);
@@ -97,13 +99,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                 catalog3.forEach(item => {
                     const element = document.createElement('div');
                     element.classList.add('product');
+                    element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="#" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
                         <p class="product__price">${item.price}</p>
-                        <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                        <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
                     catalogSectionMain.append(element);
@@ -113,13 +116,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                 catalog4.forEach(item => {
                     const element = document.createElement('div');
                     element.classList.add('product');
+                    element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="#" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
                         <p class="product__price">${item.price}</p>
-                        <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                        <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
                     catalogSectionMain.append(element);
@@ -129,13 +133,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                 catalog5.forEach(item => {
                     const element = document.createElement('div');
                     element.classList.add('product');
+                    element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="#" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
                         <p class="product__price">${item.price}</p>
-                        <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                        <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
                     catalogSectionMain.append(element);
@@ -145,13 +150,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                 catalog6.forEach(item => {
                     const element = document.createElement('div');
                     element.classList.add('product');
+                    element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="#" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
                         <p class="product__price">${item.price}</p>
-                        <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                        <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
                     catalogSectionMain.append(element);
@@ -161,13 +167,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                 catalog7.forEach(item => {
                     const element = document.createElement('div');
                     element.classList.add('product');
+                    element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="#" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
                         <p class="product__price">${item.price}</p>
-                        <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                        <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
                     catalogSectionMain.append(element);
@@ -181,13 +188,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                         catalog1.forEach(item => {
                             const element = document.createElement('div');
                             element.classList.add('product');
+                            element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="#" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
                                 <p class="product__price">${item.price}</p>
-                                <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                                <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
                             catalogSectionMain.append(element);
@@ -198,13 +206,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                         catalog2.forEach(item => {
                             const element = document.createElement('div');
                             element.classList.add('product');
+                            element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="#" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
                                 <p class="product__price">${item.price}</p>
-                                <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                                <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
                             catalogSectionMain.append(element);
@@ -215,13 +224,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                         catalog3.forEach(item => {
                             const element = document.createElement('div');
                             element.classList.add('product');
+                            element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="#" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
                                 <p class="product__price">${item.price}</p>
-                                <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                                <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
                             catalogSectionMain.append(element);
@@ -232,13 +242,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                         catalog4.forEach(item => {
                             const element = document.createElement('div');
                             element.classList.add('product');
+                            element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="#" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
                                 <p class="product__price">${item.price}</p>
-                                <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                                <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
                             catalogSectionMain.append(element);
@@ -249,13 +260,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                         catalog5.forEach(item => {
                             const element = document.createElement('div');
                             element.classList.add('product');
+                            element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="#" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
                                 <p class="product__price">${item.price}</p>
-                                <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                                <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
                             catalogSectionMain.append(element);
@@ -266,13 +278,14 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                         catalog6.forEach(item => {
                             const element = document.createElement('div');
                             element.classList.add('product');
+                            element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="#" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
                                 <p class="product__price">${item.price}</p>
-                                <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                                <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
                             catalogSectionMain.append(element);
@@ -283,20 +296,21 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                         catalog7.forEach(item => {
                             const element = document.createElement('div');
                             element.classList.add('product');
+                            element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="#" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
                                 <p class="product__price">${item.price}</p>
-                                <button class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
+                                <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
                             catalogSectionMain.append(element);
                         });
                     }
                 });
-            })
+            });
         });
-    })
+    });
 }
