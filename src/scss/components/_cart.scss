@@ -49,9 +49,14 @@
         }
     }
     &__summary {
+        width: 100px;
         @media(max-width: 785px) {
             display: flex;
+            width: auto;
         }
+    }
+    &__summ {
+        margin-left: 5px;
     }
     &__empty {
         text-align: center;
@@ -72,8 +77,15 @@
         }
     }
     &__amount {
+        display: block;
+        width: 30px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     &__delete-btn {
         font-weight: 300;

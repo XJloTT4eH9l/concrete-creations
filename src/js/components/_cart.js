@@ -2,35 +2,65 @@ const allCartItems = [];
 window.addEventListener('click', (event) => {
     if(event.target.dataset.action === 'addToCart') {
         event.preventDefault();
+        let permition = true;
         const card = event.target.closest('.product');
-        const cardTitle = card.querySelector('.product__title');
-        const cardImgUrl = card.querySelector('.product__img');
-        const cardPrice = card.querySelector('.product__price');
+        const cardId = card.getAttribute('id');
+        const cardTitle = card.querySelector('.product__title').textContent;
+        const cardImgUrl = card.querySelector('.product__img').getAttribute('src');
+        const cardPrice = card.querySelector('.product__price').textContent;
         const cardObj = {
-            id: card.getAttribute('id'),
-            title: cardTitle.textContent,
-            img: cardImgUrl.getAttribute('src'),
-            price: cardPrice.textContent
+            id: cardId,
+            title: cardTitle,
+            img: cardImgUrl,
+            price: cardPrice,
+            amount: 1
         }
-        allCartItems.push(cardObj);
+
+        allCartItems.forEach(item => {
+            if(item.id === cardId) {
+                item.amount += 1;
+                permition = false;
+                alert(`Товар: ${cardTitle} добавлен.`);
+            }
+        }); 
+        if(permition) {
+            allCartItems.push(cardObj);
+            localStorage.setItem('cartGoods', JSON.stringify(allCartItems));
+            console.log(allCartItems);
+            alert(`Товар: ${cardObj.title} добавлен.`);
+        }
         localStorage.setItem('cartGoods', JSON.stringify(allCartItems));
-        alert(`Товар: ${cardObj.title} добавлен.`);
     }
+
     if(event.target.dataset.action === 'addToCart-ProductPage') {
+        let permition = true;
         const product = document.querySelector('.card-content__inner');
-        const productTitle = product.querySelector('.card-content__title');
-        const productImage = product.querySelector('.card-content__img');
-        const productPrice = product.querySelector('.product__price');
+        const productId = product.getAttribute('id');
+        const productTitle = product.querySelector('.card-content__title').textContent;
+        const productImage = product.querySelector('.card-content__img').getAttribute('src');
+        const productPrice = product.querySelector('.product__price').textContent;
 
         const producObject = {
-            id: product.getAttribute('id'),
-            title: productTitle.textContent,
-            img: productImage.getAttribute('src'),
-            price: productPrice.textContent 
+            id: productId,
+            title: productTitle,
+            img: productImage,
+            price: productPrice,
+            amount: 1 
         }
-        allCartItems.push(producObject);
+
+        allCartItems.forEach(item => {
+            if(item.id === productId) {
+                item.amount += 1;
+                permition = false;
+                alert(`Товар: ${productTitle} добавлен.`);
+            }
+        }); 
+        if(permition) {
+            allCartItems.push(producObject);
+            localStorage.setItem('cartGoods', JSON.stringify(allCartItems));
+            alert(`Товар: ${producObject.title} добавлен.`);
+        }
         localStorage.setItem('cartGoods', JSON.stringify(allCartItems));
-        alert(`Товар: ${producObject.title} добавлен.`);
     }
 });
 
@@ -61,17 +91,18 @@ if(cartLocaiton[cartLocaiton.length - 1] === 'cart.html') {
             <div class="cart__quantity">
                 <div class="cart__buttons">
                     <button data-action="minus" class="btn-reset btn cart__btn">-</button>
-                    <span class="cart__amount">1</span>
+                    <span class="cart__amount">${item.amount}</span>
                     <button data-action="plus" class="btn-reset btn cart__btn">+</button>
                 </div>
             </div>
             <div class="cart__summary">
                 <p class="cart__title">Сумма:</p>
-                <p class="cart__summ">${parseInt(item.price) + ' грн'}</p>
+                <p class="cart__summ">${parseInt(item.price) * item.amount + ' грн'}</p>
             </div>
             <button id="${item.id}" data-action="delete" class="btn-reset btn cart__delete-btn">x</button>
             `;
             cartItems.append(cartItem);
+            showSummary();
         });
         const orderBtn = document.createElement('button');
         orderBtn.classList.add('btn-reset', 'btn', 'btn--md', 'btn__accent', 'cart__order-btn');
@@ -101,16 +132,16 @@ if(cartLocaiton[cartLocaiton.length - 1] === 'cart.html') {
             const cartSumm = cartItem.querySelector('.cart__summ');
             const cartQuanity = event.target.closest('.cart__quantity');
             const counter = cartQuanity.querySelector('.cart__amount');
-
-            counter.textContent = ++counter.textContent;
-            cartSumm.textContent = +counter.textContent * parseInt(cartPrice.textContent.split(' ')[1]) + ' грн';
-            showSummary();
+            if(counter.textContent < 10) {
+                counter.textContent = ++counter.textContent;
+                cartSumm.textContent = +counter.textContent * parseInt(cartPrice.textContent.split(' ')[1]) + ' грн';
+                showSummary();
+            }
         }
         if(event.target.dataset.action === 'delete') {
 
             for(let i = 0; i < cartGoods.length; i++) {
                 if(cartGoods[i].id === event.target.id) {
-                    console.log(cartGoods[i].id)
                     cartGoods.splice(i, 1);
                     localStorage.setItem('cartGoods', JSON.stringify(cartGoods));
                     if(cartGoods.length === 0) {
