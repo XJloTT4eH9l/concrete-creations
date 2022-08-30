@@ -14,6 +14,23 @@ window.addEventListener('click', (event) => {
         }
         allCartItems.push(cardObj);
         localStorage.setItem('cartGoods', JSON.stringify(allCartItems));
+        alert(`Товар: ${cardObj.title} добавлен.`);
+    }
+    if(event.target.dataset.action === 'addToCart-ProductPage') {
+        const product = document.querySelector('.card-content__inner');
+        const productTitle = product.querySelector('.card-content__title');
+        const productImage = product.querySelector('.card-content__img');
+        const productPrice = product.querySelector('.product__price');
+
+        const producObject = {
+            id: product.getAttribute('id'),
+            title: productTitle.textContent,
+            img: productImage.getAttribute('src'),
+            price: productPrice.textContent 
+        }
+        allCartItems.push(producObject);
+        localStorage.setItem('cartGoods', JSON.stringify(allCartItems));
+        alert(`Товар: ${producObject.title} добавлен.`);
     }
 });
 

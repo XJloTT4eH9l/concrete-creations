@@ -5,3 +5,4 @@ import './components/_show-more';
 import './components/_vacancy';
 import './components/_catalog';
 import './components/_cart';
+import './components/_card-content';

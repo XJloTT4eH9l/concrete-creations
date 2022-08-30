@@ -4,32 +4,32 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
     const goodsNums = document.querySelectorAll('.product__num');
     const catalogInner = document.querySelector('.catalog-section__inner--page');
     const catalogGoods = [
-        {num: 1, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 2, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '6250 грн/шт', img: 'img/plate.png'},
-        {num: 3, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '3400 грн/шт', img: 'img/plate.png'},
-        {num: 4, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5650 грн/шт', img: 'img/plate.png'},
-        {num: 5, id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/tray.png'},
-        {num: 6, id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/tray.png'},
-        {num: 7, id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/tray.png'},
-        {num: 8, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 9, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 10, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 11, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 12, id: 4, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 13, id: 4, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 14, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 15, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 16, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 17, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 18, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 19, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 20, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 21, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 22, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 23, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 24, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 25, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
-        {num: 26, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080х2060х580 ммВес 0,175 т  |  Объём 0,07 м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 1, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 2, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '6250 грн/шт', img: 'img/plate.png'},
+        {num: 3, id: 1, title: 'Плита П 10.5 (УБК-5)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '3400 грн/шт', img: 'img/plate.png'},
+        {num: 4, id: 1, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5650 грн/шт', img: 'img/plate.png'},
+        {num: 5, id: 2, title: 'Плита перекрытия ПБ-97', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate1.png'},
+        {num: 6, id: 2, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/tray.png'},
+        {num: 7, id: 2, title: 'Плита перекрытия ПБ-95-15-8', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate1.png'},
+        {num: 8, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 9, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 10, id: 3, title: 'Плита перекрытия ПБ-95-17-8', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate1.png'},
+        {num: 11, id: 3, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 12, id: 4, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 13, id: 4, title: 'Плита П 10.5 (УБК-5)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 14, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 15, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 16, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 17, id: 5, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 18, id: 5, title: 'Плита П 10.5 (УБК-5)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 19, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 20, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 21, id: 6, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 22, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 23, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 24, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 25, id: 7, title: 'Плита П 10.5 (УБК-5)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
+        {num: 26, id: 7, title: 'Лоток Л 20.5 (УБК-2а)', descr: 'Д/Ш/В 3080×2060×580 мм Вес 0.175т Объём&nbsp;0.07м3', price: '5200 грн/шт', img: 'img/plate.png'},
     ];
     const catalog1 = catalogGoods.filter((item) => item.id === 1);
     const catalog2 = catalogGoods.filter((item) => item.id === 2);
@@ -67,7 +67,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.classList.add('product');
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
-                    <a href="#" class="product__link">
+                    <a href="product-page.html" data-action="card-content" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
@@ -84,7 +84,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.classList.add('product');
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
-                    <a href="#" class="product__link">
+                    <a href="product-page.html" data-action="card-content" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
@@ -101,7 +101,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.classList.add('product');
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
-                    <a href="#" class="product__link">
+                    <a href="product-page.html" data-action="card-content" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
@@ -118,7 +118,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.classList.add('product');
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
-                    <a href="#" class="product__link">
+                    <a href="product-page.html" data-action="card-content" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
@@ -135,7 +135,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.classList.add('product');
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
-                    <a href="#" class="product__link">
+                    <a href="product-page.html" data-action="card-content" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
@@ -152,7 +152,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.classList.add('product');
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
-                    <a href="#" class="product__link">
+                    <a href="product-page.html" data-action="card-content" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
@@ -169,7 +169,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.classList.add('product');
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
-                    <a href="#" class="product__link">
+                    <a href="product-page.html" data-action="card-content" class="product__link">
                         <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                         <h3 class="product__title">${item.title}</h3>
                         <p class="product__description">${item.descr}</p>
@@ -190,7 +190,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.classList.add('product');
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
-                            <a href="#" class="product__link">
+                            <a href="product-page.html" data-action="card-content" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
@@ -208,7 +208,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.classList.add('product');
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
-                            <a href="#" class="product__link">
+                            <a href="product-page.html" data-action="card-content" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
@@ -226,7 +226,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.classList.add('product');
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
-                            <a href="#" class="product__link">
+                            <a href="product-page.html" data-action="card-content" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
@@ -244,7 +244,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.classList.add('product');
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
-                            <a href="#" class="product__link">
+                            <a href="product-page.html" data-action="card-content" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
@@ -262,7 +262,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.classList.add('product');
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
-                            <a href="#" class="product__link">
+                            <a href="product-page.html" data-action="card-content" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
@@ -280,7 +280,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.classList.add('product');
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
-                            <a href="#" class="product__link">
+                            <a href="product-page.html" data-action="card-content" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
@@ -298,7 +298,7 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.classList.add('product');
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
-                            <a href="#" class="product__link">
+                            <a href="product-page.html" data-action="card-content" class="product__link">
                                 <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
                                 <h3 class="product__title">${item.title}</h3>
                                 <p class="product__description">${item.descr}</p>
