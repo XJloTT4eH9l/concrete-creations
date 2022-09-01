@@ -68,10 +68,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="product-page.html" data-action="card-content" class="product__link">
-                        <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                        <h3 class="product__title">${item.title}</h3>
-                        <p class="product__description">${item.descr}</p>
-                        <p class="product__price">${item.price}</p>
+                        <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                        <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                        <p class="product__description" data-action="card-content">${item.descr}</p>
+                        <p class="product__price" data-action="card-content">${item.price}</p>
                         <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
@@ -85,10 +85,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="product-page.html" data-action="card-content" class="product__link">
-                        <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                        <h3 class="product__title">${item.title}</h3>
-                        <p class="product__description">${item.descr}</p>
-                        <p class="product__price">${item.price}</p>
+                        <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                        <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                        <p class="product__description" data-action="card-content">${item.descr}</p>
+                        <p class="product__price" data-action="card-content">${item.price}</p>
                         <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
@@ -102,10 +102,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="product-page.html" data-action="card-content" class="product__link">
-                        <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                        <h3 class="product__title">${item.title}</h3>
-                        <p class="product__description">${item.descr}</p>
-                        <p class="product__price">${item.price}</p>
+                        <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                        <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                        <p class="product__description" data-action="card-content">${item.descr}</p>
+                        <p class="product__price" data-action="card-content">${item.price}</p>
                         <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
@@ -119,10 +119,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="product-page.html" data-action="card-content" class="product__link">
-                        <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                        <h3 class="product__title">${item.title}</h3>
-                        <p class="product__description">${item.descr}</p>
-                        <p class="product__price">${item.price}</p>
+                        <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                        <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                        <p class="product__description" data-action="card-content">${item.descr}</p>
+                        <p class="product__price" data-action="card-content">${item.price}</p>
                         <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
@@ -136,10 +136,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="product-page.html" data-action="card-content" class="product__link">
-                        <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                        <h3 class="product__title">${item.title}</h3>
-                        <p class="product__description">${item.descr}</p>
-                        <p class="product__price">${item.price}</p>
+                        <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                        <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                        <p class="product__description" data-action="card-content">${item.descr}</p>
+                        <p class="product__price" data-action="card-content">${item.price}</p>
                         <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
@@ -153,10 +153,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="product-page.html" data-action="card-content" class="product__link">
-                        <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                        <h3 class="product__title">${item.title}</h3>
-                        <p class="product__description">${item.descr}</p>
-                        <p class="product__price">${item.price}</p>
+                        <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                        <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                        <p class="product__description" data-action="card-content">${item.descr}</p>
+                        <p class="product__price" data-action="card-content">${item.price}</p>
                         <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
@@ -170,10 +170,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                     element.setAttribute('id', `${item.num}`);
                     element.innerHTML = `
                     <a href="product-page.html" data-action="card-content" class="product__link">
-                        <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                        <h3 class="product__title">${item.title}</h3>
-                        <p class="product__description">${item.descr}</p>
-                        <p class="product__price">${item.price}</p>
+                        <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                        <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                        <p class="product__description" data-action="card-content">${item.descr}</p>
+                        <p class="product__price" data-action="card-content">${item.price}</p>
                         <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                     </a>
                     `;
@@ -191,10 +191,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="product-page.html" data-action="card-content" class="product__link">
-                                <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                                <h3 class="product__title">${item.title}</h3>
-                                <p class="product__description">${item.descr}</p>
-                                <p class="product__price">${item.price}</p>
+                                <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                                <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                                <p class="product__description" data-action="card-content">${item.descr}</p>
+                                <p class="product__price" data-action="card-content">${item.price}</p>
                                 <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
@@ -209,10 +209,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="product-page.html" data-action="card-content" class="product__link">
-                                <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                                <h3 class="product__title">${item.title}</h3>
-                                <p class="product__description">${item.descr}</p>
-                                <p class="product__price">${item.price}</p>
+                                <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                                <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                                <p class="product__description" data-action="card-content">${item.descr}</p>
+                                <p class="product__price" data-action="card-content">${item.price}</p>
                                 <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
@@ -227,10 +227,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="product-page.html" data-action="card-content" class="product__link">
-                                <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                                <h3 class="product__title">${item.title}</h3>
-                                <p class="product__description">${item.descr}</p>
-                                <p class="product__price">${item.price}</p>
+                                <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                                <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                                <p class="product__description" data-action="card-content">${item.descr}</p>
+                                <p class="product__price data-action="card-content"">${item.price}</p>
                                 <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
@@ -245,10 +245,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="product-page.html" data-action="card-content" class="product__link">
-                                <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                                <h3 class="product__title">${item.title}</h3>
-                                <p class="product__description">${item.descr}</p>
-                                <p class="product__price">${item.price}</p>
+                                <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                                <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                                <p class="product__description" data-action="card-content">${item.descr}</p>
+                                <p class="product__price" data-action="card-content">${item.price}</p>
                                 <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
@@ -263,10 +263,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="product-page.html" data-action="card-content" class="product__link">
-                                <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                                <h3 class="product__title">${item.title}</h3>
-                                <p class="product__description">${item.descr}</p>
-                                <p class="product__price">${item.price}</p>
+                                <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                                <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                                <p class="product__description" data-action="card-content">${item.descr}</p>
+                                <p class="product__price" data-action="card-content">${item.price}</p>
                                 <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
@@ -281,10 +281,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="product-page.html" data-action="card-content" class="product__link">
-                                <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                                <h3 class="product__title">${item.title}</h3>
-                                <p class="product__description">${item.descr}</p>
-                                <p class="product__price">${item.price}</p>
+                                <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                                <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                                <p class="product__description" data-action="card-content">${item.descr}</p>
+                                <p class="product__price" data-action="card-content">${item.price}</p>
                                 <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
@@ -299,10 +299,10 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
                             element.setAttribute('id', `${item.num}`);
                             element.innerHTML = `
                             <a href="product-page.html" data-action="card-content" class="product__link">
-                                <img class="product__img" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
-                                <h3 class="product__title">${item.title}</h3>
-                                <p class="product__description">${item.descr}</p>
-                                <p class="product__price">${item.price}</p>
+                                <img class="product__img" data-action="card-content" src=${item.img} alt="concrete tray l 20.5 (УБК-2А)">
+                                <h3 class="product__title" data-action="card-content">${item.title}</h3>
+                                <p class="product__description" data-action="card-content">${item.descr}</p>
+                                <p class="product__price" data-action="card-content">${item.price}</p>
                                 <button data-action="addToCart" class="btn btn__accent btn__short btn__product btn-reset">В корзину</button>
                             </a>
                             `;
@@ -314,3 +314,4 @@ if(locationCata[locationCata.length - 1] === 'catalog.html') {
         });
     });
 }
+console.log()

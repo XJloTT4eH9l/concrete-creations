@@ -1,11 +1,13 @@
 window.addEventListener('click', (event) => {
     if(event.target.dataset.action === 'card-content') {
+        console.log(event.target);
         const productLink = event.target;
-        const productId = productLink.closest('.product').getAttribute('id');
-        const productTitle = productLink.querySelector('.product__title');
-        const productImg = productLink.querySelector('.product__img');
-        const productDescr = productLink.querySelector('.product__description').textContent;
-        const productPrice = productLink.querySelector('.product__price');
+        const product = productLink.closest('.product');
+        const productId = product.getAttribute('id');
+        const productTitle = product.querySelector('.product__title');
+        const productImg = product.querySelector('.product__img');
+        const productDescr = product.querySelector('.product__description').textContent;
+        const productPrice = product.querySelector('.product__price');
         
 
         let deskrArr = productDescr.split(' ');
@@ -23,7 +25,7 @@ window.addEventListener('click', (event) => {
             price: productPrice.textContent,
             characteristics: characteristics
         };
-        console.log(deskrArr[0]);
+        console.log(productData);
         localStorage.setItem('cardInfo', JSON.stringify(productData));
     }
 });
@@ -53,5 +55,4 @@ if(productPageLocation[productPageLocation.length - 1] === 'product-page.html') 
     cardDepth.innerHTML = `Объём: <span>${cardInfo.characteristics[4]} м<sup>3</sup></span>`;
     cardPrice.textContent = cardInfo.price;
 
-    console.log(cardInfo);
 }
